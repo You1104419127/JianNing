@@ -1,0 +1,7 @@
+print("enter your time")
+t = input()
+t = int(t)
+height = (1/2)*9.8*t**2
+print("The ball was falling from")
+print(height)
+print("from rest")
