@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-# (3c):
+# (3a):
 theta = np.arange(0, 2*np.pi, 0.1)
 x = 2*np.cos(theta) + np.cos(2*theta)
 y = 2*np.sin(theta) - np.sin(2*theta)
