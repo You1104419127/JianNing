@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
-# (3b):
+# (2b):
 theta = np.arange(0, 10*np.pi, 0.1)
 r = theta**2
 x = r*np.cos(theta)
