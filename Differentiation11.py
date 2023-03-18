@@ -2,6 +2,8 @@
 #   I need to create a matrix (a 2D plane) first then place these 2 charges at the center:
 import numpy as np
 
+import matplotlib.pyplot as plt
+
 import sys  # in order to get epsilon zero
 
 plate = []
@@ -273,8 +275,21 @@ electric_field1 = np.array(electric_field1)
 electric_field2 = np.array(electric_field2)
 
 electric_field = electric_field1 + electric_field2   # Add them up:
-electric_field = np.reshape(electric_field,(10,10))
 
-#$$$print(potential)   # answer of first question
+#$$$electric_field = np.reshape(electric_field,(10,10))
 
-print(electric_field)
+#$$$print(electric_field)
+
+ax = plt.axes(projection='3d')
+
+ax = plt.axes(projection='3d')
+
+x = np.linspace(-5,4,10)
+
+y = np.linspace(-5,4,10)
+
+z = potential
+
+ax.contour3D(x, y, z, 100)
+
+plt.show()
