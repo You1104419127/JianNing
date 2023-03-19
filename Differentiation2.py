@@ -67,10 +67,10 @@ def Electric_field2(x,y): # electric field at a point (x,y) due to charge 2.
 
 electric_field1 = []
 electric_field2 = []
-x = -50
-while x < 50:
-    y = -50
-    while y < 50:
+x = -5
+while x < 5:
+    y = -5
+    while y < 5:
         electric_field1.append(Electric_field1(x,y))
         electric_field2.append(Electric_field2(x,y))
         y = y + 1
@@ -81,6 +81,20 @@ electric_field2 = np.array(electric_field2)
 
 electric_field = electric_field1 + electric_field2   # superposition theorem
 
-print(electric_field)  # now we have an array that contain 10,000 arrays (vectors; 1st element is x-value, 2nd
+#$$$print(electric_field)  # now we have an array that contain 10,000 arrays (vectors; 1st element is x-value, 2nd
                        #   element is y-value)
 
+x = -5
+K = 0
+while x < 5:
+    y = -5
+    while y < 5:
+        origin = np.array([[x,x],[y,y]])  # orgin with respect to target point
+        vector_array = electric_field[34]
+        vector_list = vector_array.tolist()
+        V = np.array([vector_list])
+        plt.quiver(*origin, V[:,0], V[:,1])  
+        y = y + 1
+        K = K + 1
+    x = x + 1
+plt.show()
