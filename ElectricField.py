@@ -153,5 +153,5 @@ print( )
 print( )
 print(electric_field)   # x-coordinates are positive and dominated, they are much greater than y-coordinates.
 print(electric_field1[0])
-print(electric_field2[0])
+print(electric_field2[0])  
 
