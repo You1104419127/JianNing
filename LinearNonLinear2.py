@@ -84,7 +84,7 @@ def Bisectiony1y3(a,b,y1,y3,acc):
         else: # if we got bigger difference, then interval [c,b] cannot be a new interval
 
             b = c   # we then use interval [a,c]; update b
-            a = A   # reset a
+            a = A   # reset a; because I updated a to be c before
 
             c = (a+b)/2   # update c
             B = b   # update B
