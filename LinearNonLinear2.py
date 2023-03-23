@@ -9,7 +9,7 @@ def Bisectiony1y2(a,b,y1,y2,acc):
     # acc: accuracy
     c = (a+b)/2   # find the mid-point of the interval
     abdp = np.sqrt( (y1(c) - y2(c))**2 ) # previous absolute value of the difference between 2 functions.
-    abd = abdp  # get into a WHILE loop
+    abd = abdp  # absolute value of the difference between 2 functions; get into a WHILE loop
     while abd > acc :  # a loop to keep processing until the difference between
                                              #  2 functions is less than required accuracy
 
